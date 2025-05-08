@@ -1,0 +1,43 @@
+
+
+    <!-- Content Area -->
+    <main>
+        <h2>Find a Dog or Cat</h2>
+        <form onsubmit="return validateFormFind()">
+            <label for="petType">Cat or Dog:</label>
+            <select id="petType" name="petType">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+            </select><br><br>
+
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" placeholder="Enter breed"><br><br>
+
+            <label for="age">Preferred Age:</label>
+            <select id="age" name="age">
+                <option value="any">Doesn't matter</option>
+                <option value="puppy/kitten">Puppy/Kitten</option>
+                <option value="young">Young (1-3 years)</option>
+                <option value="adult">Adult (4-7 years)</option>
+                <option value="senior">Senior (8+ years)</option>
+            </select><br><br>
+
+            <label for="gender">Preferred Gender:</label>
+            <select id="gender" name="gender">
+                <option value="any">Doesn't matter</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+
+            <label>Gets along with:</label><br><br>
+            <input type="checkbox" id="otherDogs" name="getsAlong" value="otherDogs">
+            <label for="otherDogs">Other Dogs</label><br>
+            <input type="checkbox" id="otherCats" name="getsAlong" value="otherCats">
+            <label for="otherCats">Other Cats</label><br>
+            <input type="checkbox" id="children" name="getsAlong" value="children">
+            <label for="children">Small Children</label><br><br>
+
+            <input type="submit" value="Search">
+            <input type="reset" value="Clear"><br><br><br><br><br><br>
+        </form>
+    </main>
